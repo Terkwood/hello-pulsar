@@ -5,5 +5,5 @@ object Hello extends Greeting with App {
 }
 
 trait Greeting {
-  lazy val greeting: String = "\uD83D\uDC1B"
+  lazy val greeting: String = "\uD83D\uDC1B  OK hello"
 }

@@ -8,7 +8,7 @@ ThisBuild / organizationName := "example"
 lazy val root = (project in file("."))
   .settings(
     name := "hello-pulsar",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies ++= Seq("org.apache.pulsar" % "pulsar-client" % "2.6.0", scalaTest % Test)
   )
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
